@@ -1,8 +1,8 @@
 body {
     font-family: "Trebuchet MS", sans-serif;
     margin: 0;
-    background-color: #fcf3f3;
-    color: #732a2a;
+    background-color: #f5ecf8;
+    color: #6e2a73;
 }
 
 .corner-img {
@@ -22,7 +22,7 @@ body {
 
 header,
 footer {
-    background-color: #f4bdbd;
+    background-color: #D7B0E8;
     color: rgb(255, 255, 255);
     padding: 20px;
     text-align: center;
@@ -75,14 +75,14 @@ aside {
 }
 
 aside section {
-    background-color: #fef1ea;
+    background-color: #FAEAFE;
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(98, 37, 37, 0.1);
 }
 
 footer {
-    background-color: #f4bdbd;
+    background-color: #D7B0E8;
     color: white;
     text-align: center;
     padding: 25px;
