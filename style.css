@@ -3,25 +3,29 @@ body {
     margin: 0;
     background-color: #f5ecf8;
     color: #6e2a73;
+    background-image: url("assets/backgroung_image.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 p {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 .corner-img {
     position: absolute;
     top: 10px;
     left: 10px;
-    width: 120px;
+    width: 150px;
     height: auto;
 }
 
 .icon {
-  width: 25px;         
-  height: 25px;
-  vertical-align: middle; 
-  margin-right: 8px;   
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 8px;
 }
 
 header,
@@ -43,6 +47,7 @@ nav a {
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
+    align-items: center;
 }
 
 nav a:hover {
@@ -85,7 +90,7 @@ aside section {
     background-color: #FAEAFE;
     padding: 10px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(98, 37, 37, 0.1);
+    box-shadow: 0 2px 5px rgba(85, 37, 98, 0.1);
 }
 
 footer {
