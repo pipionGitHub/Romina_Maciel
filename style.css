@@ -28,6 +28,40 @@ p {
     margin-right: 8px;
 }
 
+.block {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.block img {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.text {
+    max-width: 600px;
+}
+
+.obra {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.obra img {
+    width: 300px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.obra-texto {
+    max-width: 500px;
+}
+
+
 header,
 footer {
     background-color: #D7B0E8;
