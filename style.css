@@ -28,22 +28,10 @@ p {
     margin-right: 8px;
 }
 
-.obra {
-    display: flex;
-    gap: 2rem;
-    align-items: flex-start;
+obra-img{
+    width: 90%;
+    margin-bottom: 5%;
 }
-
-.obra img {
-    width: 300px;
-    height: auto;
-    flex-shrink: 0;
-}
-
-.obra-texto {
-    max-width: 500px;
-}
-
 
 header,
 footer {
