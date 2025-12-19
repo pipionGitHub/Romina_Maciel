@@ -26,9 +26,37 @@ p {
     margin-right: 8px;
 }
 
-.obra-img{
+.obra-img {
     width: 90%;
     margin-bottom: 5%;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    min-width: 160px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    z-index: 100;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    color: #D7B0E8;
+    /* violeta que combine */
+    font-weight: 500;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f0f0f0;
 }
 
 header,
@@ -40,7 +68,12 @@ footer {
 }
 
 nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
     margin-top: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 nav a {

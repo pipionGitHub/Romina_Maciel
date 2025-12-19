@@ -16,7 +16,19 @@
     <nav>
       <a onclick="showSection('decla')">Declaración de artista</a>
       <a onclick="showSection('bio')">Biografía</a>
-      <a onclick="showSection('obra')">Obra</a>
+
+      <div class="dropdown">
+        <a onclick="toggleDropdown()">Obra ▾</a>
+
+        <div class="dropdown-menu" id="obraMenu">
+          <a onclick="showSection('todos')">Todos</a>
+          <a onclick="showSection('collage')">Collage</a>
+          <a onclick="showSection('esculturas')">Esculturas</a>
+          <a onclick="showSection('dibujos')">Dibujos</a>
+          <a onclick="showSection('otros')">Otros</a>
+        </div>
+      </div>
+
       <a onclick="showSection('infocontacto')">Contacto</a>
     </nav>
   </header>
@@ -52,7 +64,7 @@
 
       <div id="bio" class="content-section">
         <h1>Biografía - Romina Paola Maciel</h1>
-
+        <br>
         <p>Romina Paola Maciel (Ciudad de Corrientes, Argentina, 2002) es una artista visual
           emergente cuya práctica se articula en torno a la cultura digital y las dinámicas de la
           comunicación viral. Su obra se centra en la exploración de la ironía, el humor y el
@@ -75,18 +87,76 @@
           a partir de una propuesta curatorial propuesta por la cátedra Taller de Pintura II,
           dirigida por el Lic. Pablo Silvestri.
         </p>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        <iframe width="950" height="100" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
       </div>
 
-      <div id="obra" class="content-section" style="text-align: center;">
-        <h1>Obras</h1>
+      <div id="todos" class="content-section" style="text-align: center;">
+        <h1>Todas las obras</h1>
+
+        <img src="assets/obra/shinji10.jpg" alt="Shinji" class="obra-img">
+        <img src="assets/obra/shinji_croc.jpg" alt="Shinji croc" class="obra-img">
+        <img src="assets/obra/patitos.jpg" alt="Shinji patitos" class="obra-img">
+
+        <img src="assets/obra/adicto_a_la_coca_2.JPG" alt="Adicto a la coca" class="obra-img">
+        <img src="assets/obra/cadena_detalle.JPG" alt="Detalle" class="obra-img">
+        <img src="assets/obra/cadena_detalle_2.JPG" alt="Detalle" class="obra-img">
+        <img src="assets/obra/chabon.JPG" alt="chabon" class="obra-img">
+        <img src="assets/obra/cokita.JPG" alt="mini coca" class="obra-img">
+        <img src="assets/obra/sanguche_con_coca.JPG" alt="cokita y sanguche" class="obra-img">
+        <img src="assets/obra/sanguchitos_de_miga_2.JPG" alt="sanguchitos" class="obra-img">
+        <img src="assets/obra/sanguchitos_de_miga.JPG" alt="sanguchitos" class="obra-img">
+        <img src="assets/obra/botones_detalle.JPG" alt="botoles" class="obra-img">
+        <img src="assets/obra/alto_panchito2.JPG" alt="panchito" class="obra-img">
+
+        <img src="assets/obra/migajera.jpg" alt="migajera" class="obra-img">
+        <img src="assets/obra/migajera_noveo.jpg" alt="migajera" class="obra-img">
+        <img src="assets/obra/paloma.jpg" alt="paloma" class="obra-img">
+        <img src="assets/obra/paloma_culo.jpg" alt="culo paloma" class="obra-img">
+        <img src="assets/obra/sanguche.jpg" alt="sangui" class="obra-img">
+        <img src="assets/obra/y_migajera.jpg" alt="miguitas" class="obra-img">
+
+        <img src="assets/obra/carrito_super.jpg" alt="changuito" class="obra-img">
+        <img src="assets/obra/pocacola.jpg" alt="pocacola" class="obra-img">
+
+        <img src="assets/obra/para_vos.jpg" alt="caja para vos" class="obra-img">
+        <img src="assets/obra/caja_migaja.jpg" alt="caja" class="obra-img">
+        <img src="assets/obra/caja_migaja2.jpg" alt="caja" class="obra-img">
+        <img src="assets/obra/te_amo_miguitas.jpg" alt="teamo miguitas" class="obra-img">
+        <img src="assets/obra/te_amo_miguitas2.jpg" alt="te amo miguitas" class="obra-img">
+        <img src="assets/obra/corazon_de_migas.jpg" alt="corazon de migas" class="obra-img">
+        <img src="assets/obra/sanguche_moño.jpg" alt="sanguche" class="obra-img">
+        <img src="assets/obra/sanguche-moño2.jpg" alt="sanguche" class="obra-img">
+
+        <img src="assets/obra/alfajor_conamor.jpg" alt="alfajor hecho con amor" class="obra-img">
+        <img src="assets/obra/alfajor_visto.jpg" alt="alfajor visto" class="obra-img">
+        <img src="assets/obra/alfajor_maicena_costado.jpg" alt="alfajor costado" class="obra-img">
+        <img src="assets/obra/conamor_de_Cerca.jpg" alt="con amor" class="obra-img">
+
+        <img src="assets/obra/manteca_y_tostada.png" alt="tostadas con manteca danica" class="obra-img">
+        <img src="assets/obra/tostada_sola.png" alt="tostada" class="obra-img">
+        <img src="assets/obra/manito_tostada.jpg" alt="manito tostada" class="obra-img">
+        <img src="assets/obra/danica2.jpg" alt="danica" class="obra-img">
+
+        <img src="assets/obra/rosa_y_verda.jpg" alt="" class="obra-img">
+        <img src="assets/obra/gato.jpg" alt="gato" class="obra-img">
+        <img src="assets/obra/conejito blondita.jpg" alt="conejito" class="obra-img">
+        <img src="assets/obra/bananitadolca.jpg" alt="dolca" class="obra-img">
+        <img src="assets/obra/kitkat.jpg" alt="kitkat" class="obra-img">
+        <img src="assets/obra/rocklets_grande.jpg" alt="rocklets" class="obra-img">
+        <img src="assets/obra/rocklets_chiquito.jpg" alt="rocklets mini" class="obra-img">
+
+        <img src="assets/obra/eee_notengoidea.jpg" alt="nidea" class="obra-img">
+        <img src="assets/obra/empanadas_darin.png" alt="empanadas" class="obra-img">
+        <img src="assets/obra/especial_comoella.png" alt="especial" class="obra-img">
+        <img src="assets/obra/hechos_para_dudar.png" alt="para durar" class="obra-img">
+        <img src="assets/obra/redbull te da alas.jpg" alt="redbull" class="obra-img">
+        <img src="assets/obra/masrica.png" alt="" class="obra-img">
+
+      </div>
+
+      <div id="collage" class="content-section" style="text-align: center;">
+        <h1>Collage</h1>
 
         <img src="assets/obra/shinji10.jpg" alt="Shinji" class="obra-img">
         <img src="assets/obra/shinji_croc.jpg" alt="Shinji croc" class="obra-img">
@@ -115,6 +185,49 @@
         <img src="assets/obra/" alt="" class="obra-img">
         <img src="assets/obra/" alt="" class="obra-img">
 
+      </div>
+
+      <div id="esculturas" class="content-section" style="text-align: center;">
+        <h1>Esculturas</h1>
+        <img src="assets/obra/para_vos.jpg" alt="caja para vos" class="obra-img">
+        <img src="assets/obra/caja_migaja.jpg" alt="caja" class="obra-img">
+        <img src="assets/obra/caja_migaja2.jpg" alt="caja" class="obra-img">
+        <img src="assets/obra/te_amo_miguitas.jpg" alt="teamo miguitas" class="obra-img">
+        <img src="assets/obra/te_amo_miguitas2.jpg" alt="te amo miguitas" class="obra-img">
+        <img src="assets/obra/corazon_de_migas.jpg" alt="corazon de migas" class="obra-img">
+        <img src="assets/obra/sanguche_moño.jpg" alt="sanguche" class="obra-img">
+        <img src="assets/obra/sanguche-moño2.jpg" alt="sanguche" class="obra-img">
+
+        <img src="assets/obra/alfajor_conamor.jpg" alt="alfajor hecho con amor" class="obra-img">
+        <img src="assets/obra/alfajor_visto.jpg" alt="alfajor visto" class="obra-img">
+        <img src="assets/obra/alfajor_maicena_costado.jpg" alt="alfajor costado" class="obra-img">
+        <img src="assets/obra/conamor_de_Cerca.jpg" alt="con amor" class="obra-img">
+
+        <img src="assets/obra/manteca_y_tostada.png" alt="tostadas con manteca danica" class="obra-img">
+        <img src="assets/obra/tostada_sola.png" alt="tostada" class="obra-img">
+        <img src="assets/obra/manito_tostada.jpg" alt="manito tostada" class="obra-img">
+        <img src="assets/obra/danica2.jpg" alt="danica" class="obra-img">
+      </div>
+
+      <div id="dibujos" class="content-section" style="text-align: center;">
+        <h1>Dibujos</h1>
+        <img src="assets/obra/rosa_y_verda.jpg" alt="" class="obra-img">
+        <img src="assets/obra/gato.jpg" alt="gato" class="obra-img">
+        <img src="assets/obra/conejito blondita.jpg" alt="conejito" class="obra-img">
+        <img src="assets/obra/bananitadolca.jpg" alt="dolca" class="obra-img">
+        <img src="assets/obra/kitkat.jpg" alt="kitkat" class="obra-img">
+        <img src="assets/obra/rocklets_grande.jpg" alt="rocklets" class="obra-img">
+        <img src="assets/obra/rocklets_chiquito.jpg" alt="rocklets mini" class="obra-img">
+      </div>
+
+      <div id="otros" class="content-section" style="text-align: center;">
+        <h1>Otras obras</h1>
+        <img src="assets/obra/eee_notengoidea.jpg" alt="nidea" class="obra-img">
+        <img src="assets/obra/empanadas_darin.png" alt="empanadas" class="obra-img">
+        <img src="assets/obra/especial_comoella.png" alt="especial" class="obra-img">
+        <img src="assets/obra/hechos_para_dudar.png" alt="para durar" class="obra-img">
+        <img src="assets/obra/redbull te da alas.jpg" alt="redbull" class="obra-img">
+        <img src="assets/obra/masrica.png" alt="" class="obra-img">
       </div>
 
       <div id="infocontacto" class="content-section">
@@ -150,6 +263,22 @@
       document.getElementById(sectionId).classList.add('active');
     }
   </script>
+
+  <script>
+    function toggleDropdown() {
+      const menu = document.getElementById("obraMenu");
+      menu.style.display = menu.style.display === "block" ? "none" : "block";
+    }
+
+    // Cierra el menú si clickeás afuera
+    document.addEventListener("click", function (e) {
+      const dropdown = document.querySelector(".dropdown");
+      if (!dropdown.contains(e.target)) {
+        document.getElementById("obraMenu").style.display = "none";
+      }
+    });
+  </script>
+
 
 </body>
 
